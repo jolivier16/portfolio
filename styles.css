@@ -9,6 +9,43 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: Arial, sans-serif;
+    background-color: #414141;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.headshot {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    object-fit: cover;     /* Ensures it fits well inside the circle */
+  }
+
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #414141;
+    color: #fff;
 }
 
 body {
@@ -36,4 +73,27 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 0 20px;
+    gap: 10px;
 }
