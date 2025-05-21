@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 2px solid red; /* For debugging purposes */
+    /* outline: 2px solid red; For debugging purposes */
 }
 
 html {
@@ -22,6 +22,25 @@ header {
     color: #fff;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #414141;
+    color: #fff;
+}
+
+body {
+    min-height: 800px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 .headshot {
     position: relative;
     width: 250px;
@@ -30,31 +49,6 @@ header {
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     object-fit: cover;     /* Ensures it fits well inside the circle */
   }
-
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #414141;
-    color: #fff;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
 
 a {
     text-decoration: none;
