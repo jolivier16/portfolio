@@ -18,8 +18,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 20px;
     background-color: #333;
     color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 main {
@@ -30,24 +33,36 @@ main {
     flex-direction: row;
     min-height: 100vh;
     background-color: #414141;
-    color: #fff;
+    color: #333;
 }
 
 body {
     min-height: 800px;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #414141;
     color: #333;
 }
 
+section {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 100px;
+    background-color: #ffffff2f;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 .headshot {
-    position: relative;
     width: 250px;
     height: 250px;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
-    object-fit: cover;     /* Ensures it fits well inside the circle */
+    object-fit: cover;  
   }
 
 a {
@@ -75,8 +90,11 @@ button {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 20px;
     background-color: #333;
     color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .footer-copyright {
