@@ -14,6 +14,8 @@ html {
     background-color: #414141;
 }
 
+/* take the time to re-parent the header to reflect a more usable hierarcy */
+
 header {
     display: flex;
     align-items: center; 
