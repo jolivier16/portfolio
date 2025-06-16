@@ -18,28 +18,32 @@ html {
 
 header {
     display: flex;
-    align-items: center; 
     padding: 20px;
     margin: 20px;
     background-color: #333;
     color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    /* outline: 2px solid red;  */
+    align-items: center;
+
 }
 
 .header-text {
-    flex: 0 1 auto;
-    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .hamburger {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
   font-size: 2rem;
   cursor: pointer;
   user-select: none;
+  align-self: flex-end;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
