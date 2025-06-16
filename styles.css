@@ -103,6 +103,19 @@ header {
   transform: translateY(-2px);
 }
 
+.about-holder {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 100px;
+    background-color: #ffffff0f;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -120,19 +133,6 @@ body {
     padding: 0;
     background-color: #414141;
     color: #333;
-}
-
-section {
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    flex-direction: column;
-    padding: 25px;
-    margin: 100px;
-    background-color: #ffffff0f;
-    color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .headshot {
