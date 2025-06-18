@@ -34,78 +34,7 @@ header {
     justify-content: center;
 }
 
-.hamburger {
-  font-size: 2rem;
-  cursor: pointer;
-  user-select: none;
-  align-self: flex-end;
-}
-
-.menu-container {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.hamburger:hover {
-  color: #ffffff9f;
-  transition: color 0.3s linear;
-  transform: translateY(-2px);
-}
-
-#menu-toggle {
-  display: none;
-}
-
-.menu-container {
-  position: relative;
-  width: 200px;
-}
-
-.menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 200px;
-  z-index: 2;
-  display: none;
-  flex-direction: column;
-  margin-top: 10px;
-  padding: 20px;
-  background-color: #ffffff2f;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.menu a {
-  background: #ffffff1f;
-  margin: 0.3rem 0;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-decoration: none;
-  color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background 0.2s, transform 0.2s;
-  overflow: visible;
-}
-
-.menu a:last-child {
-  margin-bottom: 0.5rem;
-}
-
-#menu-toggle:checked + .hamburger + .menu {
-  display: flex;
-}
-
-.menu a:hover {
-  background: linear-gradient(to right, #6e6e6e 50%, #3f3f3f 50%);
-  background-size: 200% 100%;
-  background-position: right;
-  transition: background-position 0.5s ease, color 0.3s linear, transform 0.2s;
-  transform: translateY(-2px);
-}
+/* deburgering, it was copied so i need to make one from scratch */
 
 .about-holder {
     display: flex;
