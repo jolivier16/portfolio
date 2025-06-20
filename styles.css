@@ -8,9 +8,12 @@
 }
 
 :root {
-    --dark: #414141;
-    --light: #333;
+    --dark: #2B2D42;
+    --grey: #8D99AE;
     --white: #ffffff;
+    --light: #ef233c;
+    --primary: #d90429;
+  
 
 }
 
