@@ -8,11 +8,11 @@
 }
 
 :root {
-    --dark: #2B2D42;
-    --grey: #8D99AE;
-    --white: #ffffff;
-    --light: #ef233c;
-    --primary: #d90429;
+    --dark: #313638;
+    --grey: #E0DFD5;
+    --white: #E8E9EB;
+    --light: #E4B363;
+    --primary: #EF6461;
   
 
 }
@@ -24,24 +24,16 @@ html {
     background-color: var(--dark);
 }
 
-/* take the time to re-parent the header to reflect a more usable hierarcy */
-
-header {
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-    background-color: var(--light);
-    color: var(--white);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    align-items: center;
-
-}
-
-.header-text {
+.nav-bar {
     display: flex;
     flex: 1;
-    justify-content: center;
+    color: var(--white);
+    background-color: var(--primary);
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 /* deburgering, it was copied so i need to make one from scratch */
@@ -66,15 +58,14 @@ main {
     justify-content: space-evenly;
     flex-direction: row;
     min-height: 100vh;
-    background-color: #414141;
-    color: #333;
+    background-color: var(--dark);
 }
 
 body {
     min-height: 800px;
     margin: 0;
     padding: 0;
-    background-color: #414141;
+    background-color: var(--dark);
     color: #333;
 }
 
