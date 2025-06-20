@@ -1,5 +1,3 @@
-
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +11,6 @@
     --white: #E8E9EB;
     --light: #E4B363;
     --primary: #EF6461;
-  
-
 }
 
 html {
@@ -71,7 +67,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-
 
 .headshot {
     width: 250px;
