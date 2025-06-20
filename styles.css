@@ -152,9 +152,10 @@ button {
 }
 
 .footer-copyright {
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
     font-style: italic;
+    font-weight: 700;
 }
 
 .footer-social-media {
