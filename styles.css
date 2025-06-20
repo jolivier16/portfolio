@@ -16,8 +16,15 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
+    font-family: 'Commissioner', sans-serif;
     background-color: var(--dark);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
 }
 
 .nav-bar {
@@ -27,8 +34,10 @@ html {
     background-color: var(--primary);
     justify-content: space-between;
     padding: 20px;
-    margin: 10px;
     border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: italic;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
@@ -68,6 +77,22 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+.about-info { 
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.highlight-name {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.highlight-proj {
+    color: var(--light);
+    font-weight: 700;
+}
+
 .headshot {
     width: 250px;
     height: 250px;
@@ -103,12 +128,15 @@ button {
     flex-direction: column;
     padding: 25px;
     margin: 100px;
-    min-width: 120px;
-    height: 60px;
+    min-width: 160px;
+    height: 70px;
     background-color: var(--light);
     color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .footer-container {
