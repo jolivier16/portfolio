@@ -41,9 +41,9 @@ html {
 main {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    min-height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 150vh;
     background-color: var(--dark);
 }
 
@@ -55,7 +55,7 @@ body {
     color: #333;
 }
 
-.about-holder {
+.about-container {
     display: flex;
     justify-content: top;
     align-items: center;
@@ -94,6 +94,21 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+.smallcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    margin: 100px;
+    min-width: 120px;
+    height: 60px;
+    background-color: var(--light);
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .footer-container {
