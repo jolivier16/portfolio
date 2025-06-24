@@ -53,15 +53,25 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     min-height: 150vh;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
 }
 
 body {
     min-height: 800px;
     margin: 0;
     padding: 0;
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     color: #333;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -1;
+    background: url('img/paper.jpg') center center / cover no-repeat;
+    opacity: 0.075; /* Adjust for desired faintness */
+    pointer-events: none;
 }
 
 .about-container {
