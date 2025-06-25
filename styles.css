@@ -70,7 +70,7 @@ body::before {
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: -1;
     background: url('img/paper.jpg') center center / cover no-repeat;
-    opacity: 0.075; /* Adjust for desired faintness */
+    opacity: 0.075;
     pointer-events: none;
 }
 
