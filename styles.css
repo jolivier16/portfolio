@@ -81,6 +81,7 @@ body::before {
     flex-direction: column;
     padding: 25px;
     margin: 100px;
+    max-width: 856px;
     background-color: #ffffff0f;
     color: #ffffff;
     border-radius: 8px;
@@ -147,6 +148,7 @@ button {
     font-size: 1.5rem;
     font-weight: 700;
     font-style: italic;
+    padding-bottom: 28px;
 }
 
 .footer-container {
