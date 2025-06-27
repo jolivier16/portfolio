@@ -66,8 +66,8 @@ header {
 
 .nav-links,
 .nav-contact,
-.jo-logo-img {
-    outline: 2px solid red;
+.jo-logo-img {-
+    /* outline: 2px solid red; */
 }
 
 main {
