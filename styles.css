@@ -29,10 +29,9 @@ header {
 
 .nav-bar {
     display: flex;
-    flex: 1;
+    flex-direction: row;
     color: var(--white);
     background-color: var(--primary);
-    justify-content: space-between;
     padding: 20px;
     border-radius: 8px;
     font-size: 1.4rem;
@@ -41,11 +40,35 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+.jo-logo-img {
+    max-width: 60px;
+    max-height: 60px;
+    padding-top: 8px;
+    justify-content: flex-start;
+}
+
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
     gap: 20px;
 }   
+
+.nav-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    max-width: fit-content;
+}
+
+.nav-links,
+.nav-contact,
+.jo-logo-img {
+    outline: 2px solid red;
+}
 
 main {
     display: flex;
