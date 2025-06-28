@@ -110,7 +110,8 @@ body::before {
     align-items: center;
     flex-direction: column;
     padding: 25px;
-    margin: 100px;
+    margin: 96px;
+    margin-bottom: 48px;
     max-width: 856px;
     background-color: #ffffff0f;
     color: #ffffff;
@@ -203,8 +204,8 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
-    margin: 100px;
+    padding: 24px;
+    margin: 96px;
     min-width: 160px;
     height: 70px;
     background-color: var(--light);
