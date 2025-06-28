@@ -282,44 +282,42 @@ button {
     font-size: 1.5rem;
     font-weight: 700;
     font-style: italic;
-    padding-bottom: 28px;
 }
 
-
-.media-content {
+.media-container {
     display: flex;
-    justify-content: top;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 25px;
-    margin: 96px;
-    margin-bottom: 48px;
-    max-width: 856px;
-    background-color: #ffffff0f;
-    color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.media-text { 
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
+    margin-bottom: 96px;
 }
 
 .youtube-embed {
-    position: relative;
+    border-radius: 8px;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
-    margin-top: 20px;
+    max-width: 560px;
+    height: 315px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.youtube-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (min-width: 320px) {
+    .youtube-embed {
+        max-width: 320px;
+    }
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 24px;
+    margin: 24px;
     background-color: var(--primary);
     color: var(--white);
     border-radius: 8px;
@@ -339,4 +337,17 @@ button {
     align-items: left;
     padding: 0 20px;
     gap: 10px;
+}
+
+.fa-brands,
+.fa-solid {
+    color: var(--white);
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+    color: var(--light);
+
 }
