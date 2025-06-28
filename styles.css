@@ -308,7 +308,7 @@ button {
 
 @media (min-width: 320px) {
     .youtube-embed {
-        max-width: 320px;
+        max-width: 420px;
     }
 }
 
