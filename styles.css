@@ -144,20 +144,32 @@ body::before {
 }
 
 /* testing mobile styles */
-@media (max-width: 600px) {
-  .about-container {
-    max-width: 98vw;
-    width: 98vw;
-    margin: 16px 0;
-    padding: 12px;
-  }
-  .headshot {
-    width: 120px;
-    height: 120px;
-  }
-  .about-info {
-    font-size: 1.1rem;
-  }
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: static;
+        transform: none;
+        gap: 16px;
+    }
+
+    .nav-contact {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .jo-logo-img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .about-container {
+        margin: 24px;
+        padding: 16px;
+    }
+
+    .about-info {
+        font-size: 1.2rem;
+    }
 }
 
 a {
