@@ -30,6 +30,8 @@ header {
 .nav-bar {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    position: relative;
     color: var(--white);
     background-color: var(--primary);
     padding: 20px;
@@ -44,30 +46,35 @@ header {
     max-width: 60px;
     max-height: 60px;
     padding-top: 8px;
+}
+
+.jo-logo {
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
 }
 
 .nav-links {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    gap: 20px;
+    gap: 48px;
+    /* max-width: fit-content; */
 }   
 
 .nav-contact {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: auto;
     gap: 20px;
-    max-width: fit-content;
+    margin-left: auto
+    /* max-width: fit-content; */
 }
 
 .nav-links,
 .nav-contact,
-.jo-logo-img {-
-    /* outline: 2px solid red; */
+.jo-logo-img {
+    outline: 2px solid red;
 }
 
 main {
@@ -133,7 +140,7 @@ body::before {
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
     object-fit: cover;  
-  }
+}
 
 a {
     text-decoration: none;
@@ -153,6 +160,25 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+.projects,
+.extras,
+.media,
+.contact {
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.projects:hover,
+.extras:hover,
+.media:hover,
+.contact:hover {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease
+
 }
 
 .smallcont {
