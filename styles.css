@@ -143,7 +143,7 @@ body::before {
     object-fit: cover;  
 }
 
-/* testing mobile styles */
+/* mobile styles */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -160,6 +160,7 @@ body::before {
     .jo-logo-img {
         max-width: 50px;
         max-height: 50px;
+        margin-bottom: 8px;
     }
 
     .about-container {
@@ -196,6 +197,54 @@ button {
     cursor: pointer;
     border: none;
     background: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile styles */
+@media (max-width: 800px) {
+  .nav-links,
+  .nav-contact {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    margin-left: auto;
+  }
+  .nav-bar.open .nav-links,
+  .nav-bar.open .nav-contact {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    background: var(--primary);
+    gap: 24px;
+    padding: 24px 0;
+    z-index: 1001;
+    align-items: center;
+  }
 }
 
 .projects,
