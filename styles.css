@@ -170,6 +170,11 @@ body::before {
     .about-info {
         font-size: 1.2rem;
     }
+
+    .headshot {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 a {
